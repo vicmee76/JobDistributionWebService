@@ -1,0 +1,81 @@
+﻿
+
+In a company, there has been an issue of distribution of jobs to staff. 
+
+The algorithm initially created stated that a staff with less job on his desk will get more jobs.
+
+The issue with this initial approch is -- A staff can work tirelessly to clear his/her desk and more job will come to him/her, while other staff can decide to be lazy and not work on any job, so that more jobs WONT come to them.
+
+To solve this problem, we need to develope a new ALGORITHM....
+
+Given an integer list of jobs {JobsWithId} that need to be distributed to a list of staff {Staff} having different role, return the appropraite staff list after job distribution in a sequencial order.
+
+
+Comments Case:
+
+1. If a job comes in, it needs to be distributed to staf in a certain role, in a sequential order.
+
+2. At first time your program runs, all staff are free.
+
+3. When a new first job comes in, having case 2 in mind, return the first staff and mark that staff as occupied, also set the job cout (e.g jobCount + 1)
+
+4. When another job comes in, it should be distributed to the next staff, marking that staff also as occupied and setting jobcount
+
+5. Job distribution needs to complete the cycle of staff, then it can start form the top again.
+
+6. If an empty staff List or a job List is passed, return and empty staff list.
+
+7. Don't forget to check for base cases and edge cases.
+
+Example : 
+
+StaffList [
+	{
+		StaffID : 1,
+		Staff : 'vic@gmail.com',
+		WorkStatus : 'Free',
+		RoleName : 'Inspector',
+		JobOnDesk : 0
+	}, 
+
+	{
+		StaffID : 2,
+		Staff : 'james@gmail.com',
+		WorkStatus : 'Free',
+		RoleName : 'Inspector',
+		JobOnDesk : 0
+	}, 
+{
+		StaffID : 3,
+		Staff : 'ruth@gmail.com',
+		WorkStatus : 'Free',
+		RoleName : 'Supervisor',
+		JobOnDesk : 0
+	}, 
+
+	{
+		StaffID : 4,
+		Staff : 'john@gmail.com',
+		WorkStatus : 'Free',
+		RoleName : 'Inspector',,
+		JobOnDesk : 0
+	}, 
+
+	{
+		StaffID : 5,
+		Staff : 'rich@gmail.com',
+		WorkStatus : 'Free',
+		RoleName : 'Inspector',
+		JobOnDesk : 0
+	}, 
+];
+
+Jobs : {234, 434, 121, 232, 434}
+
+
+Complete the function
+
+public StaffList GetNextStaff(List<StaffList> staff, int[] jobs, string role){
+	
+}
+
